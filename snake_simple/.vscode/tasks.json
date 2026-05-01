@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "C:/msys64/usr/bin/bash.exe",
+      "args": [
+        "-l",
+        "-c",
+        "export PATH=/mingw64/bin:$PATH && cd '${workspaceFolder}' && mingw32-make"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared"
+      },
+      "problemMatcher": "$gcc"
+    }
+  ]
+}
